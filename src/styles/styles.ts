@@ -7,7 +7,7 @@ export const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
 }
 body {
-  font-family: Roboto sans-serif;
+  font-family: "Roboto",  sans-serif;
   background-color: ${colors.color3};
   color: ${colors.color2}
   }
@@ -25,7 +25,7 @@ li {
 .wrapper {
   max-width: 1200px;
   margin-inline: auto;
-  padding-inline: .5rem;
+  padding-inline: 1rem;
   @media (max-width: 786px ) {
     max-width: 95%;
   } 
