@@ -13,7 +13,7 @@ export const MyHeader = styled.header`
     height: 100%;
   }
   img {
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 138px;
     @media (max-width: 768px) {
       margin-bottom: 36px;
@@ -26,12 +26,12 @@ export const MyHeader = styled.header`
     font-weight: 900;
     max-width: 539px;
     width: 100%;
-
     @media (max-width: 786px) {
       font-size: 22px;
       line-height: 1.2;
       max-width: 352px;
       width: 100%;
+      padding-bottom: 22px;
     }
   }
 `;
