@@ -8,7 +8,7 @@ export const GlobalStyles = createGlobalStyle`
 }
 body {
   font-family: "Roboto",  sans-serif;
-  background-color: ${colors.color3};
+  background-color: ${colors.color4};
   color: ${colors.color2}
   }
 a {
@@ -23,7 +23,7 @@ li {
   padding: 0;  
 }
 .wrapper {
-  max-width: 1200px;
+  max-width: 1024px;
   margin-inline: auto;
   padding-inline: 1rem;
   @media (max-width: 786px ) {
