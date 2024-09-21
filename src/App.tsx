@@ -1,4 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
+import Footer from './components/Footer';
 import MainRoutes from './Routes';
 import { GlobalStyles } from './styles/styles';
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <BrowserRouter>
         <GlobalStyles />
         <MainRoutes />
+        <Footer />
       </BrowserRouter>
     </>
   );
