@@ -3,7 +3,8 @@ import { TagProps } from '.';
 import { colors } from '../../styles/variables';
 
 export const TagContainer = styled.div<TagProps>`
-  display: inline-block;
+  display: block;
+  width: max-content;
   background-color: ${colors.color2};
   color: ${colors.color3};
   font-size: 12px;
