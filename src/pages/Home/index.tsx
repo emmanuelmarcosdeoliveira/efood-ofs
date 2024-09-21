@@ -1,9 +1,11 @@
+import Header from '../../components/Header';
+import ProductList from '../../components/ProductList';
+
 const Home = () => {
   return (
     <>
-      <div className="wrapper">
-        <h1>Minha Página Home</h1>
-      </div>
+      <Header />
+      <ProductList />
     </>
   );
 };
