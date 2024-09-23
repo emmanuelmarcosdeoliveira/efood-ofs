@@ -23,10 +23,9 @@ li {
   padding: 0;  
 }
 .wrapper {
-  max-width: 1024px;
+  width: min(90% , 1024px);
   margin-inline: auto;
-  padding-inline: 1rem;
-  @media (max-width: 786px ) {
+   @media (max-width: 786px ) {
     max-width: 95%;
   } 
 }
