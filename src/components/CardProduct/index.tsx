@@ -1,4 +1,4 @@
-import { ButtonContainer } from '../Button/styles';
+import Button from '../Button';
 import { CardProduto } from './styles';
 
 type CardProps = {
@@ -14,9 +14,9 @@ const CardProduct = ({ img, title, description, btn }: CardProps) => {
       <img src={img} alt={title} />
       <h3>{title}</h3>
       <p>{description}</p>
-      <ButtonContainer title="Veja mais detalhes do Produto" type="button">
+      <Button title="Veja mais detalhes do Produto" type="button">
         {btn}
-      </ButtonContainer>
+      </Button>
     </CardProduto>
   );
 };
