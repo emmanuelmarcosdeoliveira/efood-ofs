@@ -22,6 +22,11 @@ export const Navigation = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    li:nth-child(2) {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+    }
     @media (max-width: 768px) {
       flex-direction: column;
       li {
