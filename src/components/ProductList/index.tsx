@@ -1,9 +1,9 @@
-import Produto from '../../models/Produto';
+import { Rest } from '../../pages/Home';
 import CardProduct from '../CardProduct';
 import { Container, List } from './styles';
 
 type Props = {
-  produtos: Produto[];
+  produtos: Rest[];
 };
 
 const ProductList = ({ produtos }: Props) => {
@@ -13,10 +13,10 @@ const ProductList = ({ produtos }: Props) => {
         {produtos.map(produto => (
           <CardProduct
             key={produto.id}
-            img={produto.image}
-            title={produto.title}
-            description={produto.description}
-            btn={produto.button}
+            id={produto.id}
+            foto={produto.capa}
+            nome={produto.nome}
+            descricao={produto.descricao}
           />
         ))}
       </List>

@@ -23,7 +23,7 @@ li {
   padding: 0;  
 }
 .wrapper {
-  width: min(90% , 1024px);
+  width:  1024px;
   margin-inline: auto;
    @media (max-width: 786px ) {
     max-width: 95%;

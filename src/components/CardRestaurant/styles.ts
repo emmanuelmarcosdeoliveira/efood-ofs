@@ -1,25 +1,43 @@
 import styled from 'styled-components';
-import { Props } from '.';
 import { colors } from '../../styles/variables';
-export const Card = styled.div<
-  Omit<Props, 'title' | 'description' | 'img' | 'tag'>
->`
-  background-color: ${props =>
-    props.background === 'color1' ? colors.color1 : colors.color2};
-  width: 472px;
-  height: 398px;
-  position: relative;
 
+export const Card = styled.div`
+  background-color: ${colors.color1};
+  width: 472px;
+  height: 518px;
+  position: relative;
   img {
     display: block;
-    max-width: 100%;
+    width: 100%;
   }
 `;
 
+export const CardImg = styled.image`
+  img {
+    display: block;
+    width: 470px;
+    height: 313px;
+  }
+`;
 export const TitleCard = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 17px;
+      display: block;
+      margin-bottom: 4px;
+    }
+    p {
+      margin-left: 8px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
 `;
 
 export const ContainerTag = styled.div`

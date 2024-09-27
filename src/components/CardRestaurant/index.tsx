@@ -1,42 +1,59 @@
+import star from '../../assets/svgs/star.svg';
 import Button from '../Button';
 import Description from '../Description';
-import Star from '../Star';
 import Tag from '../Tag';
 import Title from '../Title';
-import { Card, CardContent, ContainerTag, TitleCard } from './styles';
+import { Card, CardContent, CardImg, ContainerTag, TitleCard } from './styles';
 
 export type Props = {
   img: string;
-  tag: string[];
+  infos: string[];
   title: string;
   description: string;
+  nota: number;
+  id: number;
   background: 'color1' | 'color2';
 };
+
+// const getDescription = (description: string) => {
+//   if (description.length > 200) {
+//     return description.slice(0, 197) + '...';
+//   }
+//   return description;
+// };
 
 const CardRestaurant = ({
   img,
   title,
-  tag,
+  infos,
   description,
-  background,
+  nota,
+  id,
 }: Props) => {
   return (
-    <Card background={background}>
-      <img src={img} alt={title} />
+    <Card>
+      <CardImg>
+        <img src={img} alt={title} />
+      </CardImg>
       <CardContent>
         <TitleCard>
           <Title color="color1">{title}</Title>
-          <Star />
+          <div>
+            <img src={star} alt="estrela" />
+            <p>{nota}</p>
+          </div>
         </TitleCard>
         <ContainerTag>
-          {tag.map(item => (
-            <Tag key={item} padding="medium">
-              {item}
-            </Tag>
+          {infos.map(info => (
+            <Tag key={id}>{info}</Tag>
           ))}
         </ContainerTag>
         <Description color="color1">{description}</Description>
-        <Button to="/produto/" title="Clique para saber mais" type="link">
+        <Button
+          to={`/produto/${id}`}
+          title="Clique para saber mais"
+          type="link"
+        >
           Saiba Mais
         </Button>
       </CardContent>

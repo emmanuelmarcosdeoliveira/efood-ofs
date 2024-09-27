@@ -25,3 +25,62 @@ export const CardProduto = styled.div`
     color: ${colors.color3};
   }
 `;
+
+export const BackModal = styled.section`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.73);
+  display: none;
+  &.visible {
+    display: block;
+  }
+`;
+
+export const Modal = styled.div`
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: ${colors.color2};
+  width: 1024px;
+  height: 334px;
+`;
+
+export const ModalContent = styled.div`
+  display: flex;
+  color: ${colors.color3};
+  img {
+    margin-right: 24px;
+    margin-left: 32px;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+  p {
+    padding-block: 16px;
+    max-width: 656px;
+    width: 100%;
+  }
+  span {
+    display: block;
+    padding-bottom: 16px;
+  }
+`;
+
+export const ModalHeader = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  img {
+    display: block;
+    padding: 8px;
+    cursor: pointer;
+  }
+`;
