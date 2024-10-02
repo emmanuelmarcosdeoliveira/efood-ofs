@@ -57,6 +57,7 @@ const listaProdutos: Produto[] = [
 
 const Product = () => {
   const { id } = useParams();
+  console.log(id);
   return (
     <main>
       <HeaderNavigate />
