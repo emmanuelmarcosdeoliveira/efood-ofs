@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import imgProduct from '../../assets/images/marguerita.png';
 import modalClose from '../../assets/svgs/close.svg';
-import { ButtonContainer } from '../Button/styles';
+import Button from '../Button';
 import {
   BackModal,
   CardProduto,
@@ -26,13 +26,9 @@ const CardProduct = ({ id, foto, nome, descricao }: CardProps) => {
         <img src={foto} alt={nome} />
         <h3>{nome}</h3>
         <p>{descricao}</p>
-        <ButtonContainer
-          onClick={() => setModal(true)}
-          title="Veja mais"
-          type="button"
-        >
+        <Button onClick={() => setModal(true)} title="Veja mais" type="button">
           Mais Detalhes
-        </ButtonContainer>
+        </Button>
       </CardProduto>
 
       <BackModal className={modal ? 'visible' : ''}>
@@ -63,9 +59,9 @@ const CardProduct = ({ id, foto, nome, descricao }: CardProps) => {
                 opção para qualquer ocasião.
               </p>
               <span>Serve: 2 a 3 pessoas</span>
-              <ButtonContainer type="button" title="Ver detalhes do produto">
+              <Button type="button" title="Ver detalhes do produto">
                 Ver mais detalhes
-              </ButtonContainer>
+              </Button>
             </div>
           </ModalContent>
         </Modal>
