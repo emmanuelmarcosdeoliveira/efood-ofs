@@ -36,7 +36,7 @@ const CardRestaurant = ({
           ))}
         </ContainerTag>
         <Description color="color1">{description}</Description>
-        <Button to="/produto/" title="Clique para saber mais" type="link">
+        <Button to="/produto/1" title="Clique para saber mais" type="link">
           Saiba Mais
         </Button>
       </CardContent>
