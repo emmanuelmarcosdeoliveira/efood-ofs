@@ -22,7 +22,6 @@ const RestaurantList = ({ restaurantes }: Props) => {
             <CardRestaurant
               id={restaurante.id}
               background={'color1'}
-              key={restaurante.id}
               img={restaurante.capa}
               infos={getInfos(restaurante)}
               nota={restaurante.avaliacao}

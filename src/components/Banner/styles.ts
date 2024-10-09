@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { colors } from '../../styles/variables';
 
-export const Imagem = styled.div`
+export const Image = styled.div`
   width: 100%;
   min-height: 280px;
   height: 100%;

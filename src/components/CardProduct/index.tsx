@@ -17,12 +17,11 @@ type CardProps = {
   descricao: string;
 };
 
-const CardProduct = ({ id, foto, nome, descricao }: CardProps) => {
+const CardProduct = ({ foto, nome, descricao }: CardProps) => {
   const [modal, setModal] = useState(false);
   return (
     <>
       <CardProduto>
-        id={id}
         <img src={foto} alt={nome} />
         <h3>{nome}</h3>
         <p>{descricao}</p>
@@ -40,6 +39,7 @@ const CardProduct = ({ id, foto, nome, descricao }: CardProps) => {
               onClick={() => setModal(false)}
             />
           </ModalHeader>
+
           <ModalContent>
             <div>
               <img src={imgProduct} alt="" />

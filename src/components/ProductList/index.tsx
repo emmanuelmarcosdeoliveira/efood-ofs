@@ -14,7 +14,7 @@ const ProductList = ({ produtos }: Props) => {
           <CardProduct
             key={produto.id}
             id={produto.id}
-            foto={produto.capa}
+            foto={produto.foto}
             nome={produto.nome}
             descricao={produto.descricao}
           />

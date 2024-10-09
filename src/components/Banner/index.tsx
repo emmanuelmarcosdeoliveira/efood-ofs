@@ -1,5 +1,5 @@
 import { Rest } from '../../pages/Home';
-import { Imagem } from './styles';
+import { Image } from './styles';
 
 type Props = {
   produtos: Rest[];
@@ -7,12 +7,12 @@ type Props = {
 
 const Banner = ({ produtos }: Props) => {
   return (
-    <Imagem style={{ backgroundImage: `url(${produtos})` }}>
+    <Image style={{ backgroundImage: `url(${produtos})` }}>
       <div className="wrapper">
         <span>Italiana</span>
         <h2>La Dolce Vita Trattoria</h2>
       </div>
-    </Imagem>
+    </Image>
   );
 };
 

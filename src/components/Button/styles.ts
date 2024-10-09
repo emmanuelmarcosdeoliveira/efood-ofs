@@ -12,7 +12,6 @@ export const ButtonContainer = styled.button`
   padding: 4px 6px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 16px;
   border: none;
   cursor: pointer;
 `;

@@ -3,12 +3,14 @@ import { colors } from '../../styles/variables';
 
 export const CardProduto = styled.div`
   width: 320px;
-  height: 338px;
+  height: 415px;
   padding: 8px;
   background-color: ${colors.color2};
   img {
     display: block;
     object-fit: cover;
+    width: 304px;
+    height: 167px;
   }
   h3 {
     padding-top: 8px;
@@ -23,6 +25,7 @@ export const CardProduto = styled.div`
     line-height: 1.4;
     font-weight: 400px;
     color: ${colors.color3};
+    height: 180px;
   }
 `;
 
