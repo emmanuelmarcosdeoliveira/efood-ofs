@@ -1,9 +1,9 @@
-import { Rest } from '../../pages/Home';
+import { Cardapio } from '../../pages/Home';
 import CardProduct from '../CardProduct';
 import { Container, List } from './styles';
 
 type Props = {
-  produtos: Rest[];
+  produtos: Cardapio[];
 };
 
 const ProductList = ({ produtos }: Props) => {

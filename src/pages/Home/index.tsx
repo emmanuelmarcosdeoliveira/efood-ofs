@@ -2,8 +2,15 @@ import { useEffect, useState } from 'react';
 import Header from '../../components/Header';
 import RestaurantList from '../../components/RestaurantList';
 
-export type Rest = {
+export type Cardapio = {
+  foto: string;
+  preco: number;
+  id: number;
   nome: string;
+  descricao: string;
+  porcao: string;
+};
+export type Rest = {
   id: number;
   titulo: string;
   destacado?: string;
@@ -11,16 +18,7 @@ export type Rest = {
   avaliacao: number;
   descricao: string;
   capa: string;
-  cardapio: [
-    {
-      foto: string;
-      preco?: number;
-      id: number;
-      nome: string;
-      descricao: string;
-      porcao?: string;
-    },
-  ];
+  cardapio: Cardapio[];
 };
 
 const Home = () => {

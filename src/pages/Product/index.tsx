@@ -3,11 +3,11 @@ import { useParams } from 'react-router-dom';
 import Banner from '../../components/Banner';
 import HeaderNavigate from '../../components/HeaderNavigate';
 import ProductList from '../../components/ProductList';
-import { Rest } from '../Home';
+import { Cardapio } from '../Home';
 
 const Product = () => {
   const { id } = useParams();
-  const [produtos, setProdutos] = useState<Rest[]>([]);
+  const [produtos, setProdutos] = useState<Cardapio[]>([]);
 
   if (!produtos) {
     return <h3>Carregando...</h3>;
@@ -21,7 +21,7 @@ const Product = () => {
   return (
     <main>
       <HeaderNavigate />
-      <Banner produtos={produtos} />
+      <Banner />
       <ProductList produtos={produtos} />
     </main>
   );
